@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Awolia School - Student Portal </title>
+  </head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <h1>Welcome to Awolia School- Student Portal</h1>
+      <p>Empowering Education, Inspiring Futures</p>
+      <a href="#G-9" class="btn-primary" style= "color:rgb(228, 217, 217);"> G-10</a>
+      <a href="#G-10" class="btn-primary"  style="background-color: yellow; color: black;"> G-10</a>
+      <a href="#G-11" class="btn-secondary"  style="background-color: rgb(255, 0, 0); color: black;">G-11</a>
+      <a href="#G-12" class="btn-secondary"  style="background-color: rgb(0, 60, 255); color: rgb(255, 255, 254);">G-12</a>
+     
+
+    </div>
+  </header>
+  <p style="border: 2px red; border-radius: 10px;">Access your All subjects Total result (Each subject from 100%, Total(Sum), Average and Rank.</p>
+  <section id="G-9" class="section" style="background-color: rgb(51, 211, 219);">
+    <div class="container">
+      <label class="lbl"><h3>GRADE 9</h3></label>
+      <h2 style="color: black;">WELL COME TO GRADE 9</h2>
+      <button class="btn-primary">Section A</button>
+      <button class="btn-primary">Section B</button>
+      <button class="btn-primary">Section C</button>
+      <button class="btn-primary">Section D</button>
+      <button class="btn-primary">Section E</button>
+  </section>
+
+  <section id="G-10" class="section" style="background-color: rgb(94, 244, 194);">
+    <div class="container">
+      <label class="lbl"><h3>GRADE 10</h3></label>
+      <h2 style="color: black;">WELL COME TO GRADE 10</h2>
+      <button class="btn-primary">Section A</button>
+      <button class="btn-primary">Section B</button>
+      <button class="btn-primary">Section C</button>
+      <button class="btn-primary">Section D</button>
+  </section>
+  <section id="G-11" class="section"  style="background-color: blanchedalmond;">
+    <div class="container">
+      <label class="lbl"><h3>GRADE 11</h3></label>
+      <h2 style="color: black;">WELL COME TO GRADE 11</h2>
+      <button class="btn-primary">Section A</button>
+      <button class="btn-primary">Section B</button>
+      <a href="https://script.google.com/macros/s/AKfycbx8TZodwiiTm-F39vQNzjRCbI0El-mE4gxArsWZUrQjpB0eqcXdLDEnu8b9-3rbRZuP/exec"> <button class="btn-primary">Section C</button></a>
+     
+  </section>
+
+  <section id="G-12" class="section"  style="background-image: url('https://th.bing.com/th/id/R.84ae60fcae6fd9f16c36e745676e6752?rik=0bBhy8CL%2bmxtZw&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fGTrby6G.jpg&ehk=eqVeTLl4%2b%2f38QuCaxbE3LyI3M65fD7T5gtaz%2b4baVt8%3d&risl=&pid=ImgRaw&r=0');">
+    <div class="container">
+      <label class="lbl"><h3>GRADE 12</h3></label>
+      <h2 style="color: whitesmoke;">WELL COME TO GRADE 12</h2>
+     
+      <a href="https://script.google.com/macros/s/AKfycbxaKa6Rb1gbEb1Au7swcRf0MDK3DLWcMWvL6HUVaqY/dev"><button class="btn-primary">Section A</button></a>
+      <button class="btn-primary">Section B</button>
+      <button class="btn-primary">Section C</button>
+    </div>
+  </section>
+  <div id="clock"></div>
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Awolia School | Designed for Excellence</p>
+
+      <p style="font-family: 'Courier New', Courier, monospace;">Phone No.: +251 912 66 87 87</p>
+    </div>
+  </footer>
+
+  <script>
+     // time 
+     function updateClock() {
+      const now = new Date();
+      const timeString = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' }); //HH:MM:SS
+      document.getElementById('clock').textContent = timeString;
+    }
+
+    setInterval(updateClock, 1000); // Update every second
+    updateClock(); // Initial update
+  </script>
+</body>
+</html>

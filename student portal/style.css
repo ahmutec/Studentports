@@ -1,0 +1,203 @@
+
+General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+
+  text-align: center;
+  background-color: deepskyblue;
+  transition: background-color 0.3s ease;
+}
+p{
+  border: 0;
+  border-radius: 5px;
+  background-attachment: fixed;
+  text-wrap: true;
+  font-weight:bold;
+ color: rgb(242, 241, 241);  
+
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient( #32a852, #1f7d40);
+  color: white;
+  text-align: center;
+  padding: 4rem 0;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+  stroke: #FDB731;
+	animation-delay: -5s;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  animation: fadeIn 1.5s ease-out;
+  transition: transform 0.4s ease;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  animation: fadeIn 2s ease-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.hero a {
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.8rem 2rem;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background: #27ae60;
+  color: white;
+  margin-right: 1rem;
+  border-radius: 10px;
+}
+
+.btn-secondary {
+  background: white;
+  color: #27ae60;
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+section .lbl{
+  background: rgb(96, 7, 229);
+  color: #f0eef3;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  margin-left: 0px;
+  width: 15%;
+  display: inline-block;
+  
+}
+.section #G-10 {
+  background-color: aqua;
+}
+
+.lable:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px rgba(242, 4, 4, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+/* Section */
+.section {
+  margin: 3rem 0;
+  padding: 3rem 0;
+
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease, border 0.3s ease;
+
+}
+
+.section:hover {
+  transform: scale(1.05); /* Slightly increase the size of the section */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  background: #a30a0a; /* Light background change on hover */
+  border: 2px solid #27ae60; /* Add a border effect on hover */
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #27ae60;
+  animation: fadeIn 1s ease-out;
+  transition: color 0.3s ease;
+}
+
+.section p {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+  transition: color 0.3s ease;
+}
+.section btn-lbl {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+  transition: color 0.3s ease;
+}
+.section button {
+  background: linear-gradient(120deg, #32a852, #1f7d40);
+  color: white;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s, box-shadow 0.3s ease;
+}
+
+.section button:hover {
+  background: linear-gradient(120deg, #01b0f5, #dce405);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+#clock {
+  position: fixed; /* Key change: fixed positioning */
+  top: 10px; /* Adjust top position as needed */
+  right: 10px; /* Adjust right position as needed */
+  font-size: 40px; /* Adjust font size as needed */
+  font-family: monospace; /* Optional: Use a monospace font */
+  color: #ffffff; /* Choose your color */
+  background-color: rgb(3, 3, 20); /* Optional background */
+  padding: 5px 10px; /* Optional padding */
+  border-radius: 5px; /* Optional rounded corners */
+  z-index: 100; /* Ensure it's above other content */
+}
+
+/* Footer */
+footer {
+  background: #1f7d40;
+  color: white;
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-top: 2rem;
+  transition: background-color 0.3s ease;
+}
+
+footer p {
+  font-size: 0.9rem;
+  transition: font-size 0.3s ease;
+}
+
+  .section {
+    margin: 2rem 0;
+    padding: 2rem 0;
+  }
+
+  .section h2 {
+    font-size: 1.5rem;
+  }
+
+  footer p {
+    font-size: 0.8rem;
+  }
+ 
