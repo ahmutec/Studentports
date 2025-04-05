@@ -8,12 +8,16 @@
 </head>
 <body>
     <div class="container">
-        <h1>Upload Your Assignment</h1>
+        <h1>Assignment Upload</h1>
+        <div id="assignment-question">
+            <h2>Assignment Question</h2>
+            <p><?php echo file_exists('assignment.txt') ? htmlspecialchars(file_get_contents('assignment.txt')) : 'Teacher has not uploaded the assignment question yet.'; ?></p>
+        </div>
         <p id="timer"></p>
         <form id="uploadForm" action="upload.php" method="post" enctype="multipart/form-data">
             <div class="file-input-wrapper">
                 <input type="file" id="assignment" name="assignment" required>
-                <label for="assignment">Choose File</label>
+                <label for="assignment">Choose File (Allowed: <span id="allowed-types"><?php echo file_exists('allowed_types.txt') ? htmlspecialchars(file_get_contents('allowed_types.txt')) : 'Not specified'; ?></span>)</label>
             </div>
             <button type="submit" id="submitBtn">Submit Assignment</button>
         </form>
