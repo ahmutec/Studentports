@@ -20,7 +20,7 @@ body {
     border-radius: 15px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 500px;
+    max-width: 600px;
     text-align: center;
 }
 
@@ -28,6 +28,24 @@ h1 {
     color: #333;
     margin-bottom: 20px;
     font-size: 1.8em;
+}
+
+#assignment-question {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    text-align: left;
+}
+
+#assignment-question h2 {
+    font-size: 1.4em;
+    color: #555;
+}
+
+#assignment-question p {
+    color: #777;
+    font-size: 1em;
 }
 
 #timer {
@@ -65,6 +83,11 @@ label {
 label:hover {
     background: #e0e0e0;
     border-color: #999;
+}
+
+#allowed-types {
+    color: #4CAF50;
+    font-weight: bold;
 }
 
 button {
